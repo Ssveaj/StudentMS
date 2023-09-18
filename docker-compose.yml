@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  studentservice:
+    image: ${DOCKER_REGISTRY-}studentservice
+    build:
+      context: .
+      dockerfile: StudentService/Dockerfile
